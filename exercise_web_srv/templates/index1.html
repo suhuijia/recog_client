@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache" content="no-cache">
+    <meta http-equiv="Rragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <title>OCR Recog</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+ 
+    <!-- <script src="./static/js/upload1.js"></script> -->
+
+    <style type="text/css">
+        .img_s{
+            width: 1000px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function reloadPage() {
+            // window.location.reload()
+            $('#img_top-'+(1).toString()).attr('src', './static/img/' + '1.jpg'+'?t='+Math.random());
+            $('#img_top-'+(2).toString()).attr('src', './static/img/' + '2.jpg'+'?t='+Math.random());
+            $('#img_top-'+(3).toString()).attr('src', './static/img/' + '3.jpg'+'?t='+Math.random());
+            $('#img_top-'+(4).toString()).attr('src', './static/img/' + '4.jpg'+'?t='+Math.random());
+            $('#img_top-'+(5).toString()).attr('src', './static/img/' + '5.jpg'+'?t='+Math.random());
+
+        }
+    </script>
+
+    <input type="button" name="ReloadPage" style="font-size: 0.7rem;" value="重载页面" onclick="reloadPage()" />
+
+<div style="margin-left: 1em">
+    <h1>
+        识别结果显示:
+    </h1>
+</div>
+<p><br></p>
+<div align="center">
+    
+    <div class="img-thumbnail img-responsive" id="top-1">
+        <img src="./static/img/1.jpg" class="img_s" id="img_top-1">
+        <p id="id_top-1">页面匹配结果</p>
+    </div>
+    <div class="img-thumbnail img-responsive" id="top-2">
+        <img src="./static/img/2.jpg" class="img_s" id="img_top-2">
+        <p id="id_top-2">自研全图检测结果</p>
+    </div>
+    <div class="img-thumbnail img-responsive" id="top-3">
+        <img src="./static/img/3.jpg" class="img_s" id="img_top-3">
+        <p id="id_top-3">尺度拼接图加自研结果</p>
+    </div>
+    <div class="img-thumbnail img-responsive" id="top-4">
+        <img src="./static/img/4.jpg" class="img_s" id="img_top-4">
+        <p id="id_top-4">第三方白名单验证结果</p>
+    </div>  
+    <div class="img-thumbnail img-responsive" id="top-5">
+        <img src="./static/img/5.jpg" class="img_s" id="img_top-5">
+        <p id="id_top-5">最终结果</p>
+    </div>
+
+</div>
+
+</body>
+</html>

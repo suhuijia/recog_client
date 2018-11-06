@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires", content="0">
+	<title>Image Search</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+	
+	<script src="./static/js/upload.js"></script>
+
+	<style type="text/css">
+		.img_s{
+			width: 800px;
+			height: auto;
+		}
+	</style>
+</head>
+
+
+<body>
+
+<div style="margin-left: 1em; margin-top: 1em">
+	<h1>图片上传：</h1>	
+    <div>
+        <div class="item">
+            <input type="file" name="myfile" style="font-size: 0.7rem;">
+        </div>
+        <p>
+        	<br>
+        </p>
+        <div class="item">
+            <button type="button" style="display: block; padding: 4px 18px;" class="btn-default">Recog</button>
+        </div>
+    </div>
+    <div class="prompt" style="font-size: 0.7rem;"></div>
+</div>
+        
+</div>
+
+</div>
+
+
+<div style="margin-left: 1em">
+	<h1>
+		Recog result:
+	</h1>
+</div>
+
+<div align="center">
+	
+	<div class="img-thumbnail img-responsive" id="top-1">
+		<img src="./static/img/00014/0.jpg" class="img_s" id="img_top-1">
+		<p id="id_top-1">00000</p>
+	</div>
+	<div class="img-thumbnail img-responsive" id="top-2">
+		<img src="./static/img/00014/0.jpg" class="img_s" id="img_top-2">
+		<p id="id_top-2">00000</p>
+	</div>
+	<div class="img-thumbnail img-responsive" id="top-3">
+		<img src="./static/img/00014/0.jpg" class="img_s" id="img_top-3">
+		<p id="id_top-3">00000</p>
+	</div>
+	<div class="img-thumbnail img-responsive" id="top-4">
+		<img src="./static/img/00014/0.jpg" class="img_s" id="img_top-4">
+		<p id="id_top-4">00000</p>
+	</div>
+	<!-- <div class="img-thumbnail img-responsive" id="top-5">
+		<img src="./static/img/00014/0.jpg" class="img_s" id="img_top-5">
+		<p id="id_top-5">00000</p>
+	</div> -->
+</div>
+
+</body>
+</html>
